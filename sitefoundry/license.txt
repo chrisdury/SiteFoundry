@@ -1,0 +1,40 @@
+; Note: You may remove comments from this file.
+;
+; License Type: Editor license file
+; License: XStandard Pro License
+; Product Version: 1
+; Issued Date: 2006-06-01
+; Expiration Date: not applicable
+; Licensee: metawave digital media inc.
+; Web Service URLs:
+;      http://localhost
+;      http://soap.xstandard.com
+;      http://sunnybrook.meta-wave.com
+;
+; Example 1: <param name="License" value="http://yourserver/license.txt" />
+; Example 2: <param name="License" value="C:\XStandard\license.txt" />
+--------------------------------- LICENSE ----------------------------------
+UzOWUKp4ILuvzXCUm1wMH43RLpcl2DQB5r3OOls08RRTwH10uHVw76VvKJUpq3n9HtGMwgr2QbyC
+wYvlCP93hLqgh7ew583rOOrDKx/XHVGLvkYtgFBUgUsLHexkgLKUlJaO748WmoZd4mmHiT6snqnA
+mZCj5l4TdKn4jfQkScEcGbIOBmsDP57TclCmhaA/IqCofmOZehl4/BaiH+k2zCh0WRo2ZnJGZlMX
+kiCyInx3l2fbkN1ysQi9vgCERn8J7odJ++ne25CrMxX+op0qBe0thki/VDjTdoTxpmuCLwHpX6SH
+2vOiVwgmovGoS+6z+lAWnB6srgIFOEnhYI9z7UN7RveE7Z8YSAdQ1nfbOo0iGL7cgNLEQPMY2kn7
+Qs1gWRtGoyJvMIye6V1MY82TkvDXMJ8emDtCitdzo5br+1XG0jWM46UHceoGNSoQFRA3wQg5Ccab
+rwN/P9F5fZDqyD6Vd7aRF+Hxgml2l+B3qJ8nEpPyC6xmxZlFz2tYJzQSAjftDlrAWm5Jj/HqIlWP
+TF1OoIK4J3zLprDeyp35tadgvrQMg3QcCfvkEkNj4MHuwzSyHjJQpc9tnEf8S/lqKfizBZ3fB+Bt
+QL+5ZwFkxUeBDfldVqG0xfo3KCzcPO12WO8eSposSE3tMPXJ2vaE7Xqk1fVPAEofW8j/zXq4FY+R
+ur7TxYO3U/cqbj2TK6CSS+bmmDpaafMiGentdvNmTRnANxA67olyKUZXlQubra5HbVteFFlaoKal
+DybzpmIL1x1C2MjnOwDI4gD2++641PWK2X97jmFmummdFSJRuZlctzH/AwQ1DDEYgYGqDRgsfAte
+Pj4GJvFNvUNl0qzFxJZ1yPuRs5laYGkcM1iVeCDkK6Znd6kWFG+1yVCBppfaxF6vTZQJ4iLi5Wyt
+Y59ve5/1cqkIKCm0S9onwo3H4dAAKRSNI4PRpSOTmcxfGl53jDgcmSnqu2yrpPQXULk5I5ZP9Iri
+SQn9DdgWExvp6QWqRTANe7eu6ZQY8TTlQyV9YptEAzdPonlJw6aJIMVxuyb33UV3P/uymSVG7dTD
+uglUNrfcmKtr+QEotxH7OAb4TeiBICvSIVqDbdatp7BabIPFvz1fLZd+WvMXr1voZcs/EppqL+nt
+SSVDR/k1wf/kXncugXEIqphVZPatjD68hy3xfZOCVVhHZO0TtyO6Al13HCpc5Qh9yagmOGVbDUyb
+2pfKqJaN3n3kaTI6pLdWaDluumHMpnReWxQ0wPMJRLE79U0Py23DbY0LlHcZgR1c
+----------------------------------- KEY ------------------------------------
+AQIAAAJmAAAApAAAdxAzi+lEiixuCPSuxHN/MVHfbU9SfMwapOWGnqKWntJC2dociWbW7lzQoIFW
+xwLaBx74oABRe7fsczh+ymeGIA==
+------------------------------- END LICENSE --------------------------------
+
+;web service auth
+;afb7566e03e4cb82fe8b6baab8238f0c

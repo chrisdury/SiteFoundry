@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<editors>
+	<editor id="1" name="XStandard" src="XStandard.ascx" height="420" width="730" />
+	<editor id="2" name="FreeTextBox" src="FreeTextBox.ascx" height="390" width="730"  />
+</editors>

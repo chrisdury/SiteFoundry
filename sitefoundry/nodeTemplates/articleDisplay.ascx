@@ -1,0 +1,2 @@
+<%@ Control Language="c#" AutoEventWireup="false" Codebehind="articleDisplay.ascx.cs" Inherits="Dury.SiteFoundry.nodeTemplates.Article" TargetSchema="http://schemas.microsoft.com/intellisense/ie5"%>
+<asp:placeHolder id="articleHolder" runat="server" />

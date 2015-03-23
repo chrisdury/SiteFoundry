@@ -1,0 +1,1211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3C92E2C-B54C-44E9-BC21-5D94D22F95B3}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>SiteFoundry</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SiteFoundry</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UseIISExpress>true</UseIISExpress>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="XStandard">
+      <Guid>{0EED7203-1661-11D7-84A3-00606744831D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <Reference Include="AjaxPro">
+      <Name>AjaxPro</Name>
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\AjaxProSample\AjaxPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DuryTools">
+      <Name>DuryTools</Name>
+      <HintPath>..\..\..\Documents\Visual Studio Projects\DuryTools\bin\Release\DuryTools.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox">
+      <Name>FreeTextBox</Name>
+      <HintPath>bin\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="MetaBuilders.WebControls.CustomForm">
+      <Name>MetaBuilders.WebControls.CustomForm</Name>
+      <HintPath>bin\MetaBuilders.WebControls.CustomForm.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="WilsonORMapper">
+      <Name>WilsonORMapper</Name>
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\Dev\WilsonORMapperProd\WilsonORMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="XStandard.Library">
+      <Name>XStandard.Library</Name>
+      <HintPath>bin\XStandard.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="XStandard.WebForms">
+      <Name>XStandard.WebForms</Name>
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\XStandard.WebForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\cms.aspx.cs">
+      <DependentUpon>cms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\data.asmx.cs">
+      <DependentUpon>data.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\download.aspx.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\fb_help.aspx.cs">
+      <DependentUpon>fb_help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\fixnodes.aspx.cs">
+      <DependentUpon>fixnodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\formexport.aspx.cs">
+      <DependentUpon>formexport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\helpers\documents.aspx.cs">
+      <DependentUpon>documents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\helpers\dropdownlistlinker.aspx.cs">
+      <DependentUpon>dropdownlistlinker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\helpers\gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\helpers\images.aspx.cs">
+      <DependentUpon>images.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\helpers\links.aspx.cs">
+      <DependentUpon>links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\helpers\nodeEdit.aspx.cs">
+      <DependentUpon>nodeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\modules\cmsMenuAJAX.ascx.cs">
+      <DependentUpon>cmsMenuAJAX.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\modules\cmsMenuDHTML.ascx.cs">
+      <DependentUpon>cmsMenuDHTML.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\modules\cmsMenuFlash.ascx.cs">
+      <DependentUpon>cmsMenuFlash.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\modules\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\modules\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\modules\permissionSelector.ascx.cs">
+      <DependentUpon>permissionSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\nodeDisplay.aspx.cs">
+      <DependentUpon>nodeDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\publish.aspx.cs">
+      <DependentUpon>publish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\resources.aspx.cs">
+      <DependentUpon>resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Article\Articles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Article\ContentEditors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Article\IContentEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\AdvancedArticle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\ArticleBody.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\ArticleContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\ArticleContainersPublic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\ArticleStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\FormBuilder\Field.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\FormBuilder\Form.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\FormBuilder\FormSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\FormBuilder\Responder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\FormBuilder\Response.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\Link.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\NodeRolesView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\SecurityNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\SecurityRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\SecurityUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\SecurityUserRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\DataObjects\SimpleArticle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\FormBuilder\FieldControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classes\FormBuilder\FormBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\FormBuilder\FormDisplayControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\HTTPHandlers\ImageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Imaging\ImageCodecInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Imaging\ImageProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Node\Node.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Node\NodeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Node\NodeFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Node\NodeName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Node\NodeSecurity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Node\PageTemplates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Security\Cryptography.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Security\RequestConfigHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Security\RequestConfigSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Security\RequestModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Security\Security.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Security\User.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Security\Users.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\SFGlobal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\UI\BaseArticle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classes\UI\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classes\UI\CustomFreeTextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\UI\CustomRepeater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\UrlRewrite\UrlConfigHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\UrlRewrite\UrlConfigSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\UrlRewrite\UrlModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Utils\ArticleTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Utils\QueryString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Utils\TemplateLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\Utils\Utils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="genImage.aspx.cs">
+      <DependentUpon>genImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InsertUser.aspx.cs">
+      <DependentUpon>InsertUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\advancedArticle2.ascx.cs">
+      <DependentUpon>advancedArticle2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\advancedArticleAdmin.ascx.cs">
+      <DependentUpon>advancedArticleAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\advancedArticleAdmin2.ascx.cs">
+      <DependentUpon>advancedArticleAdmin2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\advancedArticleDisplay.ascx.cs">
+      <DependentUpon>advancedArticleDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\articleAdmin.ascx.cs">
+      <DependentUpon>articleAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\articleContentEditors\FreeTextBox.ascx.cs">
+      <DependentUpon>FreeTextBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\articleContentEditors\XStandard.ascx.cs">
+      <DependentUpon>XStandard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\articleDisplay.ascx.cs">
+      <DependentUpon>articleDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\articleDisplay2.ascx.cs">
+      <DependentUpon>articleDisplay2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\articleTemplates\template1.ascx.cs">
+      <DependentUpon>template1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\articleTemplates\template2.ascx.cs">
+      <DependentUpon>template2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\alertBox.ascx.cs">
+      <DependentUpon>alertBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\displayFieldCheckBox.ascx.cs">
+      <DependentUpon>displayFieldCheckBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\displayFieldCheckBoxList.ascx.cs">
+      <DependentUpon>displayFieldCheckBoxList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\displayFieldDropDownList.ascx.cs">
+      <DependentUpon>displayFieldDropDownList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\displayFieldPassword.ascx.cs">
+      <DependentUpon>displayFieldPassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\displayFieldRadioButtonList.ascx.cs">
+      <DependentUpon>displayFieldRadioButtonList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\displayFieldResponderRegistration.ascx.cs">
+      <DependentUpon>displayFieldResponderRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\displayFieldText.ascx.cs">
+      <DependentUpon>displayFieldText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\displayFieldTextMultiline.ascx.cs">
+      <DependentUpon>displayFieldTextMultiline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\editFieldCheckBox.ascx.cs">
+      <DependentUpon>editFieldCheckBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\editFieldCheckBoxList.ascx.cs">
+      <DependentUpon>editFieldCheckBoxList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\editFieldDropDownList.ascx.cs">
+      <DependentUpon>editFieldDropDownList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\editFieldPassword.ascx.cs">
+      <DependentUpon>editFieldPassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\editFieldRadioButtonList.ascx.cs">
+      <DependentUpon>editFieldRadioButtonList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\editFieldResponderRegistration.ascx.cs">
+      <DependentUpon>editFieldResponderRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\editFieldText.ascx.cs">
+      <DependentUpon>editFieldText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\editFieldTextMultiline.ascx.cs">
+      <DependentUpon>editFieldTextMultiline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\editFormSection.ascx.cs">
+      <DependentUpon>editFormSection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\formAdmin.ascx.cs">
+      <DependentUpon>formAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\FormControlTest.ascx.cs">
+      <DependentUpon>FormControlTest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\formDisplay.ascx.cs">
+      <DependentUpon>formDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\formFieldAdminListControl.ascx.cs">
+      <DependentUpon>formFieldAdminListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\formBuilder\formSectionAdminListControl.ascx.cs">
+      <DependentUpon>formSectionAdminListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\linkAdmin.ascx.cs">
+      <DependentUpon>linkAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\linkDisplay.ascx.cs">
+      <DependentUpon>linkDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\nodeAdmin.ascx.cs">
+      <DependentUpon>nodeAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\nodeDisplay.ascx.cs">
+      <DependentUpon>nodeDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\rawHtmlAdmin.ascx.cs">
+      <DependentUpon>rawHtmlAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nodeTemplates\rawHtmlDisplay.ascx.cs">
+      <DependentUpon>rawHtmlDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages.aspx.cs">
+      <DependentUpon>pages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteTemplates\defaultFooter.ascx.cs">
+      <DependentUpon>defaultFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteTemplates\defaultHeader.ascx.cs">
+      <DependentUpon>defaultHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteTemplates\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteTemplates\foundationFooter.ascx.cs">
+      <DependentUpon>foundationFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteTemplates\foundationHeader.ascx.cs">
+      <DependentUpon>foundationHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteTemplates\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ws\linklibrary.aspx.cs">
+      <DependentUpon>linklibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="admin\admin.config" />
+    <Content Include="admin\cms.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\data.asmx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\download.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\fb_help.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\fb_help.html" />
+    <Content Include="admin\fixnodes.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\formexport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\helpers\documents.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\helpers\dropdownlistlinker.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\helpers\gallery.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\helpers\images.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\helpers\links.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\helpers\nodeEdit.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\includes\admin.css" />
+    <Content Include="admin\includes\ajax_menu.css" />
+    <Content Include="admin\includes\ajax_menu.js" />
+    <Content Include="admin\includes\common.css" />
+    <Content Include="admin\includes\fix_ieactivate.js" />
+    <Content Include="admin\includes\forms.css" />
+    <Content Include="admin\includes\main.js" />
+    <Content Include="admin\includes\prototype.js" />
+    <Content Include="admin\includes\querystring.js" />
+    <Content Include="admin\includes\xstandard.css" />
+    <Content Include="admin\modules\cmsMenuAJAX.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="admin\modules\cmsMenuDHTML.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="admin\modules\cmsMenuFlash.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="admin\modules\footer.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="admin\modules\header.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="admin\modules\permissionSelector.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="admin\nodeDisplay.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\publish.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\resources.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\test.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\users.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="genImage.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="includes\main.css" />
+    <Content Include="InsertUser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="login.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="logout.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="mappings.config" />
+    <Content Include="mappings.config.old" />
+    <Content Include="mappingsPublic.config" />
+    <Content Include="nodeTemplates\advancedArticle2.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\advancedArticleAdmin.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\advancedArticleAdmin2.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\advancedArticleDisplay.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\articleAdmin.ascx" />
+    <Content Include="nodeTemplates\articleContentEditors\editors.xml" />
+    <Content Include="nodeTemplates\articleContentEditors\FreeTextBox.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\articleContentEditors\XStandard.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\articleDisplay.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\articleDisplay2.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\articleTemplates.config" />
+    <Content Include="nodeTemplates\articleTemplates\template1.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\articleTemplates\template2.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\alertBox.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\displayFieldCheckBox.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\displayFieldCheckBoxList.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\displayFieldDropDownList.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\displayFieldPassword.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\displayFieldRadioButtonList.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\displayFieldResponderRegistration.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\displayFieldText.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\displayFieldTextMultiline.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\editFieldCheckBox.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\editFieldCheckBoxList.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\editFieldDropDownList.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\editFieldPassword.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\editFieldRadioButtonList.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\editFieldResponderRegistration.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\editFieldText.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\editFieldTextMultiline.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\editFormSection.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\fieldTypes.config" />
+    <Content Include="nodeTemplates\formBuilder\formAdmin.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\FormControlTest.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\formDisplay.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\formFieldAdminListControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\formBuilder\formSectionAdminListControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\linkAdmin.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\linkDisplay.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\nodeAdmin.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\nodeDisplay.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\rawHtmlAdmin.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodeTemplates\rawHtmlDisplay.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="nodetypes.config" />
+    <Content Include="pages.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="siteTemplates.config" />
+    <Content Include="siteTemplates\defaultFooter.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="siteTemplates\defaultHeader.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="siteTemplates\footer.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="siteTemplates\foundationFooter.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="siteTemplates\foundationHeader.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="siteTemplates\header.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="test.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Web.config" />
+    <Content Include="ws\attachmentlibrary.aspx" />
+    <Content Include="ws\attachmentlibrary.config" />
+    <Content Include="ws\bin\aspell-15.dll" />
+    <Content Include="ws\bin\pspell-15.dll" />
+    <Content Include="ws\bin\XStandard.Aspell.dll" />
+    <Content Include="ws\bin\XStandard.Directory.dll" />
+    <Content Include="ws\bin\XStandard.Library.dll" />
+    <Content Include="ws\bin\XStandard.SpellChecker.dll" />
+    <Content Include="ws\bin\XStandard.Subdocument.dll" />
+    <Content Include="ws\Copy of directory.aspx" />
+    <Content Include="ws\directory-example-product-1.txt" />
+    <Content Include="ws\directory-example-product-2.txt" />
+    <Content Include="ws\directory-example-product-3.txt" />
+    <Content Include="ws\directory-example-product-4.txt" />
+    <Content Include="ws\directory-xhtml-entities.xml" />
+    <Content Include="ws\directory-xhtml-latin1.xml" />
+    <Content Include="ws\directory-xhtml-special.xml" />
+    <Content Include="ws\directory-xhtml-symbol.xml" />
+    <Content Include="ws\directory.aspx" />
+    <Content Include="ws\directory.config" />
+    <Content Include="ws\eula.txt" />
+    <Content Include="ws\imagelibrary.aspx" />
+    <Content Include="ws\imagelibrary.config" />
+    <Content Include="ws\linklibrary.aspx" />
+    <Content Include="ws\readme.htm" />
+    <Content Include="ws\spellchecker.aspx" />
+    <Content Include="ws\spellchecker.config" />
+    <Content Include="ws\subdocument-example-A.txt" />
+    <Content Include="ws\subdocument-example-B.txt" />
+    <Content Include="ws\subdocument-example-C.txt" />
+    <Content Include="ws\subdocument-example-D.txt" />
+    <Content Include="ws\subdocument-example-E.txt" />
+    <Content Include="ws\subdocument.aspx" />
+    <Content Include="ws\test.htm" />
+    <EmbeddedResource Include="admin\cms.aspx.resx">
+      <DependentUpon>cms.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\data.asmx.resx">
+      <DependentUpon>data.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\download.aspx.resx">
+      <DependentUpon>download.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\fb_help.aspx.resx">
+      <DependentUpon>fb_help.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\fixnodes.aspx.resx">
+      <DependentUpon>fixnodes.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\formexport.aspx.resx">
+      <DependentUpon>formexport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\helpers\documents.aspx.resx">
+      <DependentUpon>documents.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\helpers\dropdownlistlinker.aspx.resx">
+      <DependentUpon>dropdownlistlinker.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\helpers\gallery.aspx.resx">
+      <DependentUpon>gallery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\helpers\images.aspx.resx">
+      <DependentUpon>images.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\helpers\links.aspx.resx">
+      <DependentUpon>links.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\helpers\nodeEdit.aspx.resx">
+      <DependentUpon>nodeEdit.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\modules\cmsMenuAJAX.ascx.resx">
+      <DependentUpon>cmsMenuAJAX.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\modules\cmsMenuDHTML.ascx.resx">
+      <DependentUpon>cmsMenuDHTML.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\modules\cmsMenuFlash.ascx.resx">
+      <DependentUpon>cmsMenuFlash.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\modules\footer.ascx.resx">
+      <DependentUpon>footer.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\modules\header.ascx.resx">
+      <DependentUpon>header.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\modules\permissionSelector.ascx.resx">
+      <DependentUpon>permissionSelector.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\nodeDisplay.aspx.resx">
+      <DependentUpon>nodeDisplay.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\publish.aspx.resx">
+      <DependentUpon>publish.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\resources.aspx.resx">
+      <DependentUpon>resources.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\test.aspx.resx">
+      <DependentUpon>test.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\users.aspx.resx">
+      <DependentUpon>users.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="genImage.aspx.resx">
+      <DependentUpon>genImage.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertUser.aspx.resx">
+      <DependentUpon>InsertUser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.aspx.resx">
+      <DependentUpon>login.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logout.aspx.resx">
+      <DependentUpon>logout.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\advancedArticle2.ascx.resx">
+      <DependentUpon>advancedArticle2.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\advancedArticleAdmin.ascx.resx">
+      <DependentUpon>advancedArticleAdmin.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\advancedArticleAdmin2.ascx.resx">
+      <DependentUpon>advancedArticleAdmin2.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\advancedArticleDisplay.ascx.resx">
+      <DependentUpon>advancedArticleDisplay.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\articleAdmin.ascx.resx">
+      <DependentUpon>articleAdmin.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\articleContentEditors\FreeTextBox.ascx.resx">
+      <DependentUpon>FreeTextBox.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\articleContentEditors\XStandard.ascx.resx">
+      <DependentUpon>XStandard.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\articleDisplay.ascx.resx">
+      <DependentUpon>articleDisplay.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\articleDisplay2.ascx.resx">
+      <DependentUpon>articleDisplay2.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\articleTemplates\template1.ascx.resx">
+      <DependentUpon>template1.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\articleTemplates\template2.ascx.resx">
+      <DependentUpon>template2.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\alertBox.ascx.resx">
+      <DependentUpon>alertBox.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\displayFieldCheckBox.ascx.resx">
+      <DependentUpon>displayFieldCheckBox.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\displayFieldCheckBoxList.ascx.resx">
+      <DependentUpon>displayFieldCheckBoxList.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\displayFieldDropDownList.ascx.resx">
+      <DependentUpon>displayFieldDropDownList.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\displayFieldPassword.ascx.resx">
+      <DependentUpon>displayFieldPassword.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\displayFieldRadioButtonList.ascx.resx">
+      <DependentUpon>displayFieldRadioButtonList.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\displayFieldResponderRegistration.ascx.resx">
+      <DependentUpon>displayFieldResponderRegistration.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\displayFieldText.ascx.resx">
+      <DependentUpon>displayFieldText.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\displayFieldTextMultiline.ascx.resx">
+      <DependentUpon>displayFieldTextMultiline.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\editFieldCheckBox.ascx.resx">
+      <DependentUpon>editFieldCheckBox.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\editFieldCheckBoxList.ascx.resx">
+      <DependentUpon>editFieldCheckBoxList.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\editFieldDropDownList.ascx.resx">
+      <DependentUpon>editFieldDropDownList.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\editFieldPassword.ascx.resx">
+      <DependentUpon>editFieldPassword.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\editFieldRadioButtonList.ascx.resx">
+      <DependentUpon>editFieldRadioButtonList.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\editFieldResponderRegistration.ascx.resx">
+      <DependentUpon>editFieldResponderRegistration.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\editFieldText.ascx.resx">
+      <DependentUpon>editFieldText.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\editFieldTextMultiline.ascx.resx">
+      <DependentUpon>editFieldTextMultiline.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\editFormSection.ascx.resx">
+      <DependentUpon>editFormSection.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\formAdmin.ascx.resx">
+      <DependentUpon>formAdmin.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\FormControlTest.ascx.resx">
+      <DependentUpon>FormControlTest.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\formDisplay.ascx.resx">
+      <DependentUpon>formDisplay.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\formFieldAdminListControl.ascx.resx">
+      <DependentUpon>formFieldAdminListControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\formBuilder\formSectionAdminListControl.ascx.resx">
+      <DependentUpon>formSectionAdminListControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\linkAdmin.ascx.resx">
+      <DependentUpon>linkAdmin.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\linkDisplay.ascx.resx">
+      <DependentUpon>linkDisplay.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\nodeAdmin.ascx.resx">
+      <DependentUpon>nodeAdmin.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\nodeDisplay.ascx.resx">
+      <DependentUpon>nodeDisplay.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\rawHtmlAdmin.ascx.resx">
+      <DependentUpon>rawHtmlAdmin.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nodeTemplates\rawHtmlDisplay.ascx.resx">
+      <DependentUpon>rawHtmlDisplay.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages.aspx.resx">
+      <DependentUpon>pages.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siteTemplates\defaultFooter.ascx.resx">
+      <DependentUpon>defaultFooter.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siteTemplates\defaultHeader.ascx.resx">
+      <DependentUpon>defaultHeader.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siteTemplates\footer.ascx.resx">
+      <DependentUpon>footer.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siteTemplates\foundationFooter.ascx.resx">
+      <DependentUpon>foundationFooter.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siteTemplates\foundationHeader.ascx.resx">
+      <DependentUpon>foundationHeader.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siteTemplates\header.ascx.resx">
+      <DependentUpon>header.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.aspx.resx">
+      <DependentUpon>test.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="image.ashx" />
+    <None Include="ws\data\ASCII.dat" />
+    <None Include="ws\data\br.dat" />
+    <None Include="ws\data\br_phonet.dat" />
+    <None Include="ws\data\ca.dat" />
+    <None Include="ws\data\cs.dat" />
+    <None Include="ws\data\cy.dat" />
+    <None Include="ws\data\da.dat" />
+    <None Include="ws\data\da_phonet.dat" />
+    <None Include="ws\data\de.dat" />
+    <None Include="ws\data\de_phonet.dat" />
+    <None Include="ws\data\dvorak.kbd" />
+    <None Include="ws\data\el.dat" />
+    <None Include="ws\data\el_phonet.dat" />
+    <None Include="ws\data\en.dat" />
+    <None Include="ws\data\en_phonet.dat" />
+    <None Include="ws\data\eo.dat" />
+    <None Include="ws\data\es.dat" />
+    <None Include="ws\data\fo.dat" />
+    <None Include="ws\data\fo_phonet.dat" />
+    <None Include="ws\data\fr.dat" />
+    <None Include="ws\data\fr_phonet.dat" />
+    <None Include="ws\data\iso8859-1.dat" />
+    <None Include="ws\data\iso8859-10.dat" />
+    <None Include="ws\data\iso8859-13.dat" />
+    <None Include="ws\data\iso8859-14.dat" />
+    <None Include="ws\data\iso8859-15.dat" />
+    <None Include="ws\data\iso8859-2.dat" />
+    <None Include="ws\data\iso8859-3.dat" />
+    <None Include="ws\data\iso8859-4.dat" />
+    <None Include="ws\data\iso8859-5.dat" />
+    <None Include="ws\data\iso8859-6.dat" />
+    <None Include="ws\data\iso8859-7.dat" />
+    <None Include="ws\data\iso8859-8.dat" />
+    <None Include="ws\data\iso8859-9.dat" />
+    <None Include="ws\data\it.dat" />
+    <None Include="ws\data\koi8-f.dat" />
+    <None Include="ws\data\koi8-r.dat" />
+    <None Include="ws\data\koi8-u.dat" />
+    <None Include="ws\data\nl.dat" />
+    <None Include="ws\data\no.dat" />
+    <None Include="ws\data\pl.dat" />
+    <None Include="ws\data\pt.dat" />
+    <None Include="ws\data\ro.dat" />
+    <None Include="ws\data\ru.dat" />
+    <None Include="ws\data\ru_phonet.dat" />
+    <None Include="ws\data\sk.dat" />
+    <None Include="ws\data\standard.kbd" />
+    <None Include="ws\data\sv.dat" />
+    <None Include="ws\data\sv_phonet.dat" />
+    <None Include="ws\data\uk.dat" />
+    <None Include="ws\data\viscii.dat" />
+    <None Include="ws\dict\american-w-accents.alias" />
+    <None Include="ws\dict\american.alias" />
+    <None Include="ws\dict\british-w-accents.alias" />
+    <None Include="ws\dict\british.alias" />
+    <None Include="ws\dict\canadian-w-accents.alias" />
+    <None Include="ws\dict\canadian.alias" />
+    <None Include="ws\dict\en-only.rws" />
+    <None Include="ws\dict\en.multi" />
+    <None Include="ws\dict\english.alias" />
+    <None Include="ws\dict\en_CA-only.rws" />
+    <None Include="ws\dict\en_CA-w-accents.multi" />
+    <None Include="ws\dict\en_CA.multi" />
+    <None Include="ws\dict\en_GB-only.rws" />
+    <None Include="ws\dict\en_GB-w-accents.multi" />
+    <None Include="ws\dict\en_GB.multi" />
+    <None Include="ws\dict\en_US-only.rws" />
+    <None Include="ws\dict\en_US-w-accents.multi" />
+    <None Include="ws\dict\en_US.multi" />
+    <None Include="ws\directory_example_staff.csv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v12.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7027/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

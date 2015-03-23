@@ -1,0 +1,364 @@
+﻿<buttons>
+	<cmd>
+		<id>ordered-list</id>
+		<name xml:lang="en">Numbered list</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>ordered-list</icon>
+	</cmd>
+	<cmd>
+		<id>unordered-list</id>
+		<name xml:lang="en">Bulleted list</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>unordered-list</icon>
+	</cmd>
+	<cmd>
+		<id>undo-blockquote</id>
+		<name xml:lang="en">Remove long quotation</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>undo-blockquote</icon>
+	</cmd>
+	<cmd>
+		<id>blockquote</id>
+		<name xml:lang="en">Add long quotation</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>blockquote</icon>
+	</cmd>
+	<cmd>
+		<id>layout-table</id>
+		<name xml:lang="en">Insert layout table</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>layout-table</icon>
+	</cmd>
+	<cmd>
+		<id>data-table</id>
+		<name xml:lang="en">Insert data table</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>data-table</icon>
+	</cmd>
+	<cmd>
+		<id>draw-layout-table</id>
+		<name xml:lang="en">Draw layout table</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>draw-layout-table</icon>
+	</cmd>
+	<cmd>
+		<id>draw-data-table</id>
+		<name xml:lang="en">Draw data table</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>draw-data-table</icon>
+	</cmd>
+	<cmd>
+		<id>image</id>
+		<name xml:lang="en">Image</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>image</icon>
+	</cmd>
+	<cmd>
+		<id>line</id>
+		<name xml:lang="en">Line</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>line</icon>
+	</cmd>
+	<cmd>
+		<id>hyperlink</id>
+		<name xml:lang="en">Hyperlink</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>hyperlink</icon>
+	</cmd>
+	<cmd>
+		<id>attachment</id>
+		<name xml:lang="en">Attachment</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>attachment</icon>
+	</cmd>
+	<cmd>
+		<id>cut</id>
+		<name xml:lang="en">Cut</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>cut</icon>
+	</cmd>
+	<cmd>
+		<id>copy</id>
+		<name xml:lang="en">Copy</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>copy</icon>
+	</cmd>
+	<cmd>
+		<id>paste</id>
+		<name xml:lang="en">Paste</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>paste</icon>
+	</cmd>
+	<cmd>
+		<id>undo</id>
+		<name xml:lang="en">Undo</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>undo</icon>
+	</cmd>
+	<cmd>
+		<id>wysiwyg</id>
+		<name xml:lang="en">Edit</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>edit</icon>
+	</cmd>
+	<cmd>
+		<id>source</id>
+		<name xml:lang="en">View source</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>xml</icon>
+	</cmd>
+	<cmd>
+		<id>preview</id>
+		<name xml:lang="en">Browser preview</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>preview</icon>
+	</cmd>
+	<cmd>
+		<id>screen-reader</id>
+		<name xml:lang="en">Screen reader preview</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>wheelchair</icon>
+	</cmd>
+	<cmd>
+		<id>spellchecker</id>
+		<name xml:lang="en">Spelling</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>spellchecker</icon>
+	</cmd>
+	<cmd>
+		<id>directory</id>
+		<name xml:lang="en">Directory</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>tree</icon>
+	</cmd>
+	<cmd>
+		<id>expand</id>
+		<name xml:lang="en">Expand</name>
+		<name xml:lang="xx">TODO</name>
+		<icon>expand</icon>
+	</cmd>
+	<button>
+		<id>dropdownlistlinker</id>
+		<name xml:lang="en">Drop Down List Linker</name>
+		<name xml:lang="xx">TODO</name>
+		<toggle>no</toggle>
+		<icon>expand</icon>
+	</button>
+	<button>
+		<id>save</id>
+		<name xml:lang="en">Save</name>
+		<name xml:lang="xx">TODO</name>
+		<toggle>no</toggle>
+		<icon>save</icon>
+	</button>
+	<button>
+		<id>print</id>
+		<name xml:lang="en">Print</name>
+		<name xml:lang="xx">TODO</name>
+		<toggle>no</toggle>
+		<icon>printer</icon>
+	</button>
+	<button>
+		<id>open-document</id>
+		<name xml:lang="en">Open document</name>
+		<name xml:lang="xx">TODO</name>
+		<toggle>no</toggle>
+		<icon>open</icon>
+	</button>
+	<button>
+		<id>new-document</id>
+		<name xml:lang="en">New document</name>
+		<name xml:lang="xx">TODO</name>
+		<toggle>no</toggle>
+		<icon>document</icon>
+	</button>
+	<button>
+		<id>properties</id>
+		<name xml:lang="en">Properties</name>
+		<name xml:lang="xx">TODO</name>
+		<toggle>no</toggle>
+		<icon>properties</icon>
+	</button>
+	<button>
+		<id>validate</id>
+		<name xml:lang="en">Validate</name>
+		<name xml:lang="xx">TODO</name>
+		<toggle>no</toggle>
+		<icon>validate</icon>
+	</button>
+	<button>
+		<id>wizard</id>
+		<name xml:lang="en">Wizard</name>
+		<name xml:lang="xx">TODO</name>
+		<toggle>no</toggle>
+		<icon>wizard</icon>
+	</button>
+	<style>
+		<id>underline</id>
+		<name xml:lang="en">Underline</name>
+		<name xml:lang="xx">TODO</name>
+		<elt>span</elt>
+		<attr>
+			<name>class</name>
+			<value>underline</value>
+		</attr>
+		<icon>underline</icon>
+	</style>
+	<style>
+		<id>strikethrough</id>
+		<name xml:lang="en">Strikethrough</name>
+		<name xml:lang="xx">TODO</name>
+		<elt>span</elt>
+		<attr>
+			<name>class</name>
+			<value>strikethrough</value>
+		</attr>
+		<icon>strikethrough</icon>
+	</style>
+	<style>
+		<id>indent</id>
+		<name xml:lang="en">Indent</name>
+		<name xml:lang="xx">TODO</name>
+		<elt>p</elt>
+		<attr>
+			<name>class</name>
+			<value>indent</value>
+		</attr>
+		<icon>indent</icon>
+	</style>
+	<style>
+		<id>align-left</id>
+		<name xml:lang="en">Align left</name>
+		<name xml:lang="xx">TODO</name>
+		<elt>p</elt>
+		<attr>
+			<name>class</name>
+			<value>left</value>
+		</attr>
+		<icon>align-left</icon>
+	</style>
+	<style>
+		<id>align-center</id>
+		<name xml:lang="en">Align center</name>
+		<name xml:lang="xx">TODO</name>
+		<elt>p</elt>
+		<attr>
+			<name>class</name>
+			<value>center</value>
+		</attr>
+		<icon>align-center</icon>
+	</style>
+	<style>
+		<id>align-right</id>
+		<name xml:lang="en">Align right</name>
+		<name xml:lang="xx">TODO</name>
+		<elt>p</elt>
+		<attr>
+			<name>class</name>
+			<value>right</value>
+		</attr>
+		<icon>align-right</icon>
+	</style>
+	<style>
+		<id>strong</id>
+		<name xml:lang="en">Bold</name>
+		<name xml:lang="xx">TODO</name>
+		<elt>strong</elt>
+		<icon>bold</icon>
+	</style>
+	<style>
+		<id>em</id>
+		<name xml:lang="en">Italic</name>
+		<name xml:lang="xx">TODO</name>
+		<elt>em</elt>
+		<icon>italic</icon>
+	</style>
+	<style>
+		<id>sub</id>
+		<name xml:lang="en">Subscript</name>
+		<name xml:lang="xx">TODO</name>
+		<elt>sub</elt>
+		<icon>subscript</icon>
+	</style>
+	<style>
+		<id>sup</id>
+		<name xml:lang="en">Superscript</name>
+		<name xml:lang="xx">TODO</name>
+		<elt>sup</elt>
+		<icon>superscript</icon>
+	</style>
+	<snippet>
+		<id>textbox</id>
+		<name xml:lang="en">Text box</name>
+		<name xml:lang="xx">TODO</name>
+		<value>
+			&lt;div class="textbox"&gt;&lt;h5&gt;{heading}&lt;/h5&gt;&lt;p&gt;{text}&lt;/p&gt;&lt;/div&gt;
+		</value>
+		<icon>news</icon>
+	</snippet>
+	<snippet>
+		<id>photo</id>
+		<name xml:lang="en">Photo</name>
+		<name xml:lang="xx">TODO</name>
+		<value>
+			&lt;div class="photo"&gt;&lt;p&gt;&lt;img width="100" alt="" height="150" src="images/placeholder.gif" /&gt;&lt;br /&gt;{CAPTION/CREDIT}&lt;/p&gt;&lt;/div&gt;
+		</value>
+		<icon>camera</icon>
+	</snippet>
+	<snippet>
+		<id>copyright</id>
+		<name xml:lang="en">Copyright symbol</name>
+		<name xml:lang="xx">TODO</name>
+		<value>©</value>
+		<icon>copyright</icon>
+	</snippet>
+	<snippet>
+		<id>euro</id>
+		<name xml:lang="en">Euro symbol</name>
+		<name xml:lang="xx">TODO</name>
+		<value>€</value>
+		<icon>euro</icon>
+	</snippet>
+	<snippet>
+		<id>pound</id>
+		<name xml:lang="en">Pound symbol</name>
+		<name xml:lang="xx">TODO</name>
+		<value>£</value>
+		<icon>pound</icon>
+	</snippet>
+	<snippet>
+		<id>registered-trade-mark</id>
+		<name xml:lang="en">Registered trade mark symbol</name>
+		<name xml:lang="xx">TODO</name>
+		<value>®</value>
+		<icon>registered-trade-mark</icon>
+	</snippet>
+	<snippet>
+		<id>trade-mark</id>
+		<name xml:lang="en">Trade mark symbol</name>
+		<name xml:lang="xx">TODO</name>
+		<value>™</value>
+		<icon>trade-mark</icon>
+	</snippet>
+	<snippet>
+		<id>yen</id>
+		<name xml:lang="en">Yen symbol</name>
+		<name xml:lang="xx">TODO</name>
+		<value>¥</value>
+		<icon>yen</icon>
+	</snippet>
+	<window>
+		<id>help</id>
+		<name xml:lang="en">Help</name>
+		<name xml:lang="xx">TODO</name>
+		<url>http://xstandard.com/help/</url>
+		<icon>help</icon>
+	</window>
+	<window>
+		<id>dropdownlistlinker_window</id>
+		<name xml:lang="en">Help</name>
+		<name xml:lang="xx">TODO</name>
+		<url>http://localhost/sitefoundry/admin/helpers/dropdownlistlinker.aspx</url>
+		<icon>help</icon>
+	</window>
+</buttons>

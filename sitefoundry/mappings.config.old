@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mappings version="4.2">
+	<entity type="Dury.SiteFoundry.AdvancedArticle" table="AdvancedArticles" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="nodeID" field="nodeID" alias="NodeID" />
+		<attribute member="templateID" field="templateID" alias="TemplateID" />
+		<attribute member="lang" field="lang" alias="Lang" />
+		<attribute member="version" field="version" alias="Version" />
+		<attribute member="rank" field="rank" alias="Rank" />
+		<attribute member="title" field="title" alias="Title" />
+		<attribute member="keyword" field="keywords" alias="Keyword" />
+		<attribute member="summary" field="summary" alias="Summary" />
+		<attribute member="body" field="body" alias="Body" />
+		<attribute member="userID" field="userID" alias="UserID" />
+		<attribute member="active" field="active" alias="Active" />
+		<attribute member="publish" field="publish" alias="Publish" />
+		<attribute member="preview" field="preview" alias="Preview" />
+		<attribute member="dateCreated" field="dateCreated" alias="DateCreated" />
+		<attribute member="dateModified" field="dateModified" alias="DateModified" />
+		<relation relationship="ManyToOne" member="nodeIDObject" field="nodeID"
+			 type="Dury.SiteFoundry.Node" alias="NodeIDObject" lazyLoad="true" />
+		<relation relationship="ManyToOne" member="userIDObject" field="userID"
+			 type="Dury.SiteFoundry.SecurityUser" alias="UserIDObject" lazyLoad="true" />
+	</entity>
+	<entity type="Dury.SiteFoundry.ArticleBody" table="ArticleBodies" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="articleID" field="articleID" alias="ArticleID" />
+		<attribute member="templateID" field="templateID" alias="TemplateID" />
+		<attribute member="lang" field="lang" alias="Lang" />
+		<attribute member="pageNumber" field="pageNumber" alias="PageNumber" />
+		<attribute member="title" field="title" alias="Title" />
+		<attribute member="summary" field="summary" alias="Summary" />
+		<attribute member="keyword" field="keywords" alias="Keyword" />
+		<attribute member="body" field="body" alias="Body" />
+		<attribute member="createdBy" field="createdBy" alias="CreatedBy" />
+		<attribute member="editedBy" field="editedBy" alias="EditedBy" />
+		<attribute member="statusID" field="statusID" alias="StatusID" />
+		<attribute member="publish" field="publish" alias="Publish" />
+		<attribute member="dateCreated" field="dateCreated" alias="DateCreated" />
+		<attribute member="dateModified" field="dateModified" alias="DateModified" />
+	</entity>
+	<entity type="Dury.SiteFoundry.ArticleContainer" table="ArticleContainers" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="nodeID" field="nodeID" alias="NodeID" />
+		<attribute member="typeID" field="typeID" alias="TypeID" />
+		<attribute member="name" field="name" alias="Name" />
+		<attribute member="publish" field="publish" alias="Publish" />
+		<attribute member="dateCreated" field="dateCreated" alias="DateCreated" />
+		<attribute member="dateModified" field="dateModified" alias="DateModified" />
+		<attribute member="dateExpire" field="dateExpires" alias="DateExpire" />
+	</entity>
+	<entity type="Dury.SiteFoundry.ArticleContainersPublic" table="ArticleContainers_public" keyMember="" keyType="None">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="nodeID" field="nodeID" alias="NodeID" />
+		<attribute member="typeID" field="typeID" alias="TypeID" />
+		<attribute member="name" field="name" alias="Name" />
+		<attribute member="publish" field="publish" alias="Publish" />
+		<attribute member="dateCreated" field="dateCreated" alias="DateCreated" />
+		<attribute member="dateModified" field="dateModified" alias="DateModified" />
+		<attribute member="dateExpire" field="dateExpires" alias="DateExpire" />
+	</entity>
+	<entity type="Dury.SiteFoundry.ArticleStatus" table="ArticleStatus" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="name" field="name" alias="Name" />
+	</entity>
+	<entity type="Dury.SiteFoundry.Link" table="Links" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="nodeID" field="nodeID" alias="NodeID" />
+		<attribute member="uRL" field="linkURL" alias="URL" />
+		<attribute member="publish" field="publish" alias="Publish" />
+		<attribute member="dateCreated" field="dateCreated" alias="DateCreated" />
+		<attribute member="dateModified" field="dateModified" alias="DateModified" />
+		<attribute member="createdBy" field="createdBy" alias="CreatedBy" />
+		<attribute member="editedBy" field="editedBy" alias="EditedBy" />
+		<relation relationship="ManyToOne" member="nodeIDObject" field="nodeID"
+			 type="Dury.SiteFoundry.Node" alias="NodeIDObject" lazyLoad="true" />
+		<relation relationship="ManyToOne" member="createdByObject" field="createdBy"
+			 type="Dury.SiteFoundry.SecurityUser" alias="CreatedByObject" lazyLoad="true" />
+		<relation relationship="ManyToOne" member="editedByObject" field="editedBy"
+			 type="Dury.SiteFoundry.SecurityUser" alias="EditedByObject" lazyLoad="true" />
+	</entity>
+	<entity type="Dury.SiteFoundry.NodeName" table="NodeNames" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="nodeID" field="nodeID" alias="NodeID" />
+		<attribute member="lang" field="lang" alias="Lang" />
+		<attribute member="name" field="name" alias="Name" />
+		<relation relationship="ManyToOne" member="nodeIDObject" field="nodeID"
+			 type="Dury.SiteFoundry.Node" alias="NodeIDObject" lazyLoad="true" />
+	</entity>
+	<entity type="Dury.SiteFoundry.Node" table="Nodes" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="parentID" field="parentID" alias="ParentID" />
+		<attribute member="filename" field="filename" alias="Filename" />
+		<attribute member="typeID" field="nodeTypeID" alias="TypeID" />
+		<attribute member="publish" field="publish" alias="Publish" />
+		<attribute member="pageTemplateID" field="pageTemplateID" alias="PageTemplateID" nullValue="-1" />
+		<attribute member="visible" field="visible" alias="Visible" />
+		<attribute member="visibleMenu" field="visibleMenu" alias="VisibleMenu" />
+		<attribute member="visibleSubMenu" field="visibleSubMenu" alias="VisibleSubMenu" />
+		<attribute member="rank" field="rank" alias="Rank" />
+		<attribute member="dateCreated" field="DateCreated" alias="DateCreated" />
+		<attribute member="dateModified" field="DateModified" alias="DateModified" />
+		<relation relationship="OneToMany" member="advancedArticleNodeIDs" field="nodeID"
+			 type="Dury.SiteFoundry.AdvancedArticle" alias="AdvancedArticleNodeIDs" lazyLoad="true" cascadeDelete="true" />
+		<relation relationship="OneToMany" member="linkNodeIDs" field="nodeID"
+			 type="Dury.SiteFoundry.Link" alias="LinkNodeIDs" lazyLoad="true" cascadeDelete="true" />
+		<relation relationship="OneToMany" member="nodeNameNodeIDs" field="nodeID"
+			 type="Dury.SiteFoundry.NodeName" alias="NodeNameNodeIDs" lazyLoad="true" cascadeDelete="true" />
+		<relation relationship="OneToMany" member="securityNodeNodeIDs" field="nodeID"
+			 type="Dury.SiteFoundry.SecurityNode" alias="SecurityNodeNodeIDs" lazyLoad="true" cascadeDelete="true" />
+		<relation relationship="OneToMany" member="simpleArticleNodeIDs" field="nodeID"
+			 type="Dury.SiteFoundry.SimpleArticle" alias="SimpleArticleNodeIDs" lazyLoad="true" cascadeDelete="true" />
+	</entity>
+	<entity type="Dury.SiteFoundry.SecurityNode" table="SecurityNodes" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="nodeID" field="nodeID" alias="NodeID" />
+		<attribute member="roleID" field="roleID" alias="RoleID" />
+		<attribute member="permissionLevel" field="permissionLevel" alias="PermissionLevel" />
+		<relation relationship="ManyToOne" member="nodeIDObject" field="nodeID"
+			 type="Dury.SiteFoundry.Node" alias="NodeIDObject" lazyLoad="true" />
+		<relation relationship="ManyToOne" member="roleIDObject" field="roleID"
+			 type="Dury.SiteFoundry.SecurityRole" alias="RoleIDObject" lazyLoad="true" />
+	</entity>
+	<entity type="Dury.SiteFoundry.SecurityRole" table="SecurityRoles" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="name" field="name" alias="Name" />
+		<relation relationship="OneToMany" member="securityNodeRoleIDs" field="roleID"
+			 type="Dury.SiteFoundry.SecurityNode" alias="SecurityNodeRoleIDs" lazyLoad="true" cascadeDelete="true" />
+		<relation relationship="OneToMany" member="securityUserRoleRoleIDs" field="roleID"
+			 type="Dury.SiteFoundry.SecurityUserRole" alias="SecurityUserRoleRoleIDs" lazyLoad="true" cascadeDelete="true" />
+	</entity>
+	<entity type="Dury.SiteFoundry.SecurityUserRole" table="SecurityUserRoles" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="userID" field="userID" alias="UserID" />
+		<attribute member="roleID" field="roleID" alias="RoleID" />
+		<relation relationship="ManyToOne" member="roleIDObject" field="roleID"
+			 type="Dury.SiteFoundry.SecurityRole" alias="RoleIDObject" lazyLoad="true" />
+		<relation relationship="ManyToOne" member="userIDObject" field="userID"
+			 type="Dury.SiteFoundry.SecurityUser" alias="UserIDObject" lazyLoad="true" />
+	</entity>
+	<entity type="Dury.SiteFoundry.SecurityUser" table="SecurityUsers" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="disabled" field="disabled" alias="Disabled" />
+		<attribute member="username" field="Username" alias="Username" />
+		<attribute member="password" field="Password" alias="Password" />
+		<attribute member="fullName" field="FullName" alias="FullName" />
+		<attribute member="email" field="Email" alias="Email" />
+		<attribute member="lastLogin" field="LastLogin" alias="LastLogin" />
+		<attribute member="dateCreated" field="DateCreated" alias="DateCreated" />
+		<attribute member="dateModified" field="DateModified" alias="DateModified" />
+		<relation relationship="OneToMany" member="advancedArticleUserIDs" field="userID"
+			 type="Dury.SiteFoundry.AdvancedArticle" alias="AdvancedArticleUserIDs" lazyLoad="true" cascadeDelete="true" />
+		<relation relationship="OneToMany" member="linkCreatedBies" field="createdBy"
+			 type="Dury.SiteFoundry.Link" alias="LinkCreatedBies" lazyLoad="true" cascadeDelete="true" />
+		<relation relationship="OneToMany" member="linkEditedBies" field="editedBy"
+			 type="Dury.SiteFoundry.Link" alias="LinkEditedBies" lazyLoad="true" cascadeDelete="true" />
+		<relation relationship="OneToMany" member="securityUserRoleUserIDs" field="userID"
+			 type="Dury.SiteFoundry.SecurityUserRole" alias="SecurityUserRoleUserIDs" lazyLoad="true" cascadeDelete="true" />
+		<relation relationship="OneToMany" member="simpleArticleCreatedBies" field="createdBy"
+			 type="Dury.SiteFoundry.SimpleArticle" alias="SimpleArticleCreatedBies" lazyLoad="true" cascadeDelete="true" />
+		<relation relationship="OneToMany" member="simpleArticleEditedBies" field="editedBy"
+			 type="Dury.SiteFoundry.SimpleArticle" alias="SimpleArticleEditedBies" lazyLoad="true" cascadeDelete="true" />
+	</entity>
+	<entity type="Dury.SiteFoundry.SimpleArticle" table="SimpleArticles" keyMember="id" keyType="Auto">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="nodeID" field="nodeID" alias="NodeID" />
+		<attribute member="showTemplate" field="showTemplate" alias="ShowTemplate" />
+		<attribute member="title" field="title" alias="Title" />
+		<attribute member="body" field="body" alias="Body" />
+		<attribute member="publish" field="publish" alias="Publish" />
+		<attribute member="dateCreated" field="dateCreated" alias="DateCreated" />
+		<attribute member="dateModified" field="dateModified" alias="DateModified" />
+		<attribute member="editedBy" field="editedBy" alias="EditedBy" />
+		<attribute member="createdBy" field="createdBy" alias="CreatedBy" />
+		<relation relationship="ManyToOne" member="nodeIDObject" field="nodeID"
+			 type="Dury.SiteFoundry.Node" alias="NodeIDObject" lazyLoad="true" />
+		<relation relationship="ManyToOne" member="editedByObject" field="editedBy"
+			 type="Dury.SiteFoundry.SecurityUser" alias="EditedByObject" lazyLoad="true" />
+		<relation relationship="ManyToOne" member="createdByObject" field="createdBy"
+			 type="Dury.SiteFoundry.SecurityUser" alias="CreatedByObject" lazyLoad="true" />
+	</entity>
+	<entity type="Dury.SiteFoundry.NodeRolesView" table="NodeRolesView" keyMember="" keyType="None">
+		<attribute member="id" field="id" alias="Id" />
+		<attribute member="name" field="name" alias="Name" />
+		<attribute member="permissionLevel" field="permissionLevel" alias="PermissionLevel" />
+		<attribute member="nodeID" field="nodeID" alias="NodeID" />
+	</entity>
+</mappings>

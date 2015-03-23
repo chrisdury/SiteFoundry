@@ -1,0 +1,155 @@
+ARTICLEUPDATE
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ALTER PROCEDURE publishArticles AS
+
+
+--first publish the containers
+if exists (select * from dbo.sysobjects where id = object_id(N'ArticleContainers_public') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	BEGIN
+		drop table ArticleContainers_public
+	END
+SELECT * INTO ArticleContainers_public FROM ArticleContainers
+
+
+--now publish the articles themselves.
+
+if not exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ArticleBodies_public]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	BEGIN
+		--drop table [dbo].[ArticleBodies_public]
+		CREATE TABLE [dbo].[ArticleBodies_public] (
+			[id] [int] IDENTITY (1, 1) NOT NULL ,
+			[articleID] [int] NOT NULL ,
+			[templateID] [int] NULL ,
+			[lang] [varchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AI NULL ,
+			[pageNumber] [int] NOT NULL ,
+			[title] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AI NOT NULL ,
+			[summary] [text] COLLATE SQL_Latin1_General_CP1_CI_AI NULL ,
+			[body] [text] COLLATE SQL_Latin1_General_CP1_CI_AI NULL ,
+			[createdBy] [int] NOT NULL ,
+			[editedBy] [int] NOT NULL ,
+			[statusID] [int] NOT NULL ,
+			[publish] [bit] NULL ,
+			[dateCreated] [datetime] NULL ,
+			[dateModified] [datetime] NULL 
+		) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+	END
+
+
+SET IDENTITY_INSERT [dbo].[ArticleBodies_public] ON
+
+
+--insert new rows
+INSERT INTO [dbo].[ArticleBodies_public] 
+(id,articleID,templateID,lang,pageNumber,title,summary,body,createdBy,editedBy,statusID,publish,dateCreated,dateModified)
+SELECT * FROM ArticleBodies
+WHERE ArticleBodies.publish = 1 
+AND ArticleBodies.id NOT IN (SELECT id FROM [dbo].[ArticleBodies_public])
+
+
+
+--update rows
+UPDATE [dbo].[ArticleBodies_public] SET
+	articleID = ab.articleID,
+	templateID = ab.templateID,
+	lang = ab.lang,
+	pageNumber = ab.pageNumber,
+	title = ab.title,
+	summary = ab.summary,
+	body = ab.body,
+	createdBy = ab.createdBy,
+	editedBy = ab.editedBy,
+	statusID = ab.statusID,
+	publish = ab.publish,	dateCreated = ab.dateCreated,
+	dateModified = ab.dateModified
+FROM ArticleBodies ab
+WHERE [dbo].[ArticleBodies_public].[id] = ab.id
+AND ab.publish = 1
+
+
+
+-- delete orphan rows
+DELETE FROM [dbo].[ArticleBodies_public] WHERE id NOT IN
+(SELECT id FROM ArticleBodies)
+
+
+-- turn off publish bit
+UPDATE ArticleBodies SET publish = 0 WHERE publish = 1
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ALTER  PROCEDURE publishLinks AS
+
+if exists (select * from dbo.sysobjects where id = object_id(N'Links_public') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[Links_public]
+
+
+SELECT * INTO [dbo].[Links_public] FROM Links WHERE Links.publish=1
+UPDATE Links SET publish = 0 WHERE publish = 1
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+ALTER  PROCEDURE publishRawHtml AS
+
+if not exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[SimpleArticles]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	BEGIN
+
+		CREATE TABLE [dbo].[SimpleArticles_public] (
+			[id] [int] IDENTITY (1, 1) NOT NULL ,
+			[nodeID] [int] NOT NULL ,
+			[showTemplate] [bit] NULL ,
+			[title] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AI NULL ,
+			[body] [text] COLLATE SQL_Latin1_General_CP1_CI_AI NULL ,
+			[publish] [bit] NULL ,
+			[dateCreated] [datetime] NULL ,
+			[dateModified] [datetime] NULL ,
+			[editedBy] [int] NULL ,
+			[createdBy] [int] NULL 
+		) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+	END
+
+
+SET IDENTITY_INSERT [dbo].[SimpleArticles_public] ON
+
+
+INSERT INTO [dbo].[SimpleArticles_public] 
+(id,nodeID,showTemplate,title,body,title,publish,dateCreated,dateModified,editedBy,createdBy)
+SELECT * FROM SimpleArticles
+WHERE SimpleArticles.publish = 1 
+AND SimpleArticles.id NOT IN (SELECT id FROM [dbo].[SimpleArticles_public])
+
+
+
+UPDATE [dbo].[SimpleArticles_public] SET
+	id = p.id,
+	nodeID = p.nodeID,
+	showTemplate = p.showTemplate,
+	title = p.title,
+	body = p.body,
+	title = p.title,
+	publish = p.publish,
+	dateCreated = p.dateCreated,
+	dateModified = p.dateModified,
+	editedBy = p.editedBy,
+	createdBy = p.createdBy
+FROM SimpleArticles p
+WHERE [dbo].[SimpleArticles_public].[id] = ab.id
+AND ab.publish = 1
+
+
+DELETE FROM [dbo].[SimpleArticles_public] WHERE id NOT IN
+(SELECT id FROM SimpleArticles)
+
+
+UPDATE SimpleArticles SET publish = 0 WHERE publish = 1
+
+

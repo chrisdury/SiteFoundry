@@ -1,0 +1,2 @@
+<%@ Control Language="c#" AutoEventWireup="false" Codebehind="articleDisplay2.ascx.cs" Inherits="Dury.SiteFoundry.nodeTemplates.articleDisplay2" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
+<asp:placeholder id="holder" runat="server"/>

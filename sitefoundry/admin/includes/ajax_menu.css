@@ -1,0 +1,60 @@
+#ajaxMenu 
+{
+	
+	}
+	
+	#ajaxMenu a.parentLink
+	{
+		font-family:Courier New;
+		color:#EF8A27;
+	}
+	#ajaxMenu a 
+	{
+		text-decoration:none;
+		font-size:11px;
+		white-space:nowrap;
+	}
+	#ajaxMenu a.parentless
+	{
+		margin-left:10px;
+	}
+	#ajaxMenu a.selected 
+	{
+		color:#EF8A27;
+	}
+	
+	#ajaxMenu div.menuContainer 
+	{
+		padding-left:10px;
+	}
+	
+	#ajaxMenu a.utils 
+	{
+		color:#aaa;
+		margin-left:3px;
+	}
+	
+#nodeMenu 
+{
+	position:absolute;
+	left:-100px;
+	top:0px;
+	vertical-align:middle;
+	width:60px;
+	}
+	#nodeMenu img
+	{
+		vertical-align:middle;
+	}
+	
+	
+#addNodeLink 
+{
+	margin: 5px 10px;	
+	}
+	#addNodeLink a 
+	{
+		text-decoration:none;
+		color:#333;	
+	}
+		

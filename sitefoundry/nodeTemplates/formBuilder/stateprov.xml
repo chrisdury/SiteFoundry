@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<provlist>
+	<country name="Canada">
+		<prov code="AB" name="Alberta" />
+		<prov code="BC" name="British Columbia" />
+		<prov code="MB" name="Manitoba" />
+		<prov code="NB" name="New Brunswick" />
+		<prov code="NL" name="Newfoundland and Labrador" />
+		<prov code="NT" name="Northwest Territories" />
+		<prov code="NS" name="Nova Scotia" />
+		<prov code="NU" name="Nunavut" />
+		<prov code="ON" name="Ontario" />
+		<prov code="PE" name="Prince Edward Island" />
+		<prov code="QC" name="Quebec" />
+		<prov code="SK" name="Saskatchewan" />
+		<prov code="YK" name="Yukon" />
+	</country>
+	<country name="United States">
+		<prov code="AL" name="Alabama" />
+		<prov code="AK" name="Alaska" />
+		<prov code="AZ" name="Arizona" />
+		<prov code="AR" name="Arkansas" />
+		<prov code="CA" name="California" />
+		<prov code="CO" name="Colorado" />
+		<prov code="CT" name="Connecticut" />
+		<prov code="DE" name="Delaware" />
+		<prov code="FL" name="Florida" />
+		<prov code="GA" name="Georgia" />
+		<prov code="HI" name="Hawaii" />
+		<prov code="ID" name="Idaho" />
+		<prov code="IL" name="Illinois" />
+		<prov code="IN" name="Indiana" />
+		<prov code="IA" name="Iowa" />
+		<prov code="KS" name="Kansas" />
+		<prov code="KY" name="Kentucky" />
+		<prov code="LA" name="Louisiana" />
+		<prov code="ME" name="Maine" />
+		<prov code="MD" name="Maryland" />
+		<prov code="MA" name="Massachusetts" />
+		<prov code="MI" name="Michigan" />
+		<prov code="MN" name="Minnesota" />
+		<prov code="MS" name="Mississippi" />
+		<prov code="MO" name="Missouri" />
+		<prov code="MT" name="Montana" />
+		<prov code="NE" name="Nebraska" />
+		<prov code="NV" name="Nevada" />
+		<prov code="NH" name="New Hampshire" />
+		<prov code="NJ" name="New Jersey" />
+		<prov code="NM" name="New Mexico" />
+		<prov code="NY" name="New York" />
+		<prov code="NC" name="North Carolina" />
+		<prov code="ND" name="North Dakota" />
+		<prov code="OH" name="Ohio" />
+		<prov code="OK" name="Oklahoma" />
+		<prov code="OR" name="Oregon" />
+		<prov code="PA" name="Pennsylvania" />
+		<prov code="RI" name="Rhode Island" />
+		<prov code="SC" name="South Carolina" />
+		<prov code="SD" name="South Dakota" />
+		<prov code="TN" name="Tennessee" />
+		<prov code="TX" name="Texas" />
+		<prov code="UT" name="Utah" />
+		<prov code="VT" name="Vermont" />
+		<prov code="VA" name="Virginia" />
+		<prov code="WA" name="Washington" />
+		<prov code="WV" name="West Virginia" />
+		<prov code="WI" name="Wisconsin" />
+		<prov code="WY" name="Wyoming" />
+	</country>
+</provlist>

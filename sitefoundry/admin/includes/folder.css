@@ -1,0 +1,95 @@
+span.folder {
+	display: block;
+	/*
+	background-color: #FFFFFF;
+	border: 1px solid #909090;
+	*/
+}
+
+span.folder span.titlebar {
+	display: block;
+	width: 100%;
+	background-color: #909090;
+	border-bottom: 1px solid #606060;
+}
+
+span.folder span.titlebar table {
+	width: 100%;
+}
+
+span.folder span.titlebar td {
+	padding: 2px;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+span.folder span.titlebar input.button {
+	background-color: #909090;
+	border: 1px solid #909090;
+}
+
+span.folder span.titlebar input.button:hover {
+	border: 1px outset #6F6F6F;
+}
+
+span.folder span.titlebar input.button:active {
+	border: 1px inset #6F6F6F;
+}
+
+span.folder span.body {
+	display: block;
+	width: 100%;
+}
+
+/* LIST VIEW */
+span.folder table.list {
+	width: 100%;
+	border-collapse: separate;
+}
+
+span.folder table.list th, span.folder table.list tr.header td {
+	background-color: #C0C0C0;
+	padding: 2px 4px 2px 4px;
+	gpadding: 2px;
+	border-right: 1px solid #9F9F9F;
+	border-bottom: 1px solid #9F9F9F;
+	border-left: 1px solid #CFCFCF;
+	text-transform: capitalize;
+}
+
+span.folder table.list th.active, span.folder table.list tr.header td.active {
+	background-color: #F0F0F0;
+	border-right: 1px solid #CFCFCF;
+	border-bottom: 1px solid #CFCFCF;
+	border-left: 1px solid #FFFFFF;
+}
+
+span.folder table.list th.last {
+	border-right: 0px;
+}
+
+span.folder table.list th:hover {
+	cursor: pointer;
+	background-color: #909090;
+	border-right: 1px solid #6F6F6F;
+	border-bottom: 1px solid #6F6F6F;
+	border-left: 1px solid #9F9F9F;
+}
+
+span.folder table.list td {
+	padding: 2px;
+}
+
+span.folder table.list td.active {
+	background-color: #F0F0F0;
+}
+
+span.folder table.list tr:hover td {
+	background-color: #F0F0F0;
+	cursor: pointer;
+}
+
+span.folder table.list tr:hover td.active {
+	background-color: #E0E0E0;
+}

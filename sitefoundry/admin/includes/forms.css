@@ -1,0 +1,81 @@
+
+/*
+input.button {
+	font-size: 12px;
+	font-weight:bold;
+	border-width: 1px;
+	padding: 2px;
+	background-color: #eee;
+	border-color: #333;
+	cursor:hand;
+	color:#333;
+}
+input.button_delete {
+	font-size: 12px;
+	font-weight:bold;
+	border-width: 1px;
+	padding: 2px;
+	background-color: #BF2C2C;
+	border-color: #000000;
+	cursor:hand;
+	color:#fff;
+}
+
+*/
+
+
+input.button {
+	font-size:10px;
+	font-weight:bold;
+	border: 1px solid #aaa;
+	background:url(../images/buttonbg.gif);
+	padding:1px;
+	cursor:hand;
+}
+
+input.green {
+	background-image: url(../images/buttonbg-green.gif);	
+}
+
+input.red {
+	background-image: url(../images/buttonbg-red.gif);
+	/*color:#FFEA00;*/
+}
+
+
+input.yellow {
+	background-image: url(../images/buttonbg-yellow.gif);
+}
+
+
+select.small {
+	font-size:10px;	
+}
+
+.inputText {
+	border:1px solid #ccc;
+	font-family:Arial;
+	font-size:11px;	
+}
+
+.inputTextFixedWidth {
+	border:1px solid #ccc;
+	font-family:Courier;
+	font-size:11px;
+}
+
+
+
+
+select {
+	/*font-size:11px;	*/
+	border:1px solid #aaa;
+}
+
+
+
+input.textbox {
+	border:1px solid #aaa;	
+	font-size:10px;
+	
+}
